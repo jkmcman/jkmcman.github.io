@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Waving Text and Image</title>
+
+
+<style>
+body{
+    margin:0;
+    background:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    flex-direction:column;
+    overflow:hidden;
+}
+
+
+.wave{
+    animation: waveMotion 2s ease-in-out infinite;
+}
+
+
+h1{
+    color:white;
+    font-family: Arial, sans-serif;
+    font-size:40px;
+    margin-bottom:30px;
+}
+
+
+img{
+    width:300px;
+    border-radius:12px;          
+    border:8px solid #888888;    
+}
+
+
+@keyframes waveMotion{
+    0%   { transform: translateY(0px); }
+    50%  { transform: translateY(-25px); }
+    100% { transform: translateY(0px); }
+}
+</style>
+</head>
+
+
+<body>
+
+
+<h1>Test.</h1>
+<img class="wave" 
+src="https://picsum.photos/600/400" 
+alt="image">
+
+
+</body>
+</html>
